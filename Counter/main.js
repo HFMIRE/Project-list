@@ -1,16 +1,14 @@
-// set intital count
 let count = 0;
 
 const value = document.querySelector(".value");
 const btn = document.querySelectorAll(".btn");
 
 btn.forEach(function (item) {
-  console.log(item);
   item.addEventListener("click", function (e) {
     const styles = e.currentTarget.classList;
-    if (styles.contains("decrease")) {
+    if (slidess.contains("decrease")) {
       count--;
-    } else if (styles.contains("increase")) {
+    } else if (slidess.contains("increase")) {
       count++;
     } else {
       count = 0;
@@ -22,7 +20,6 @@ btn.forEach(function (item) {
     } else if (count === 0) {
       value.style.color = "black";
     }
-
     value.textContent = count;
   });
 });
