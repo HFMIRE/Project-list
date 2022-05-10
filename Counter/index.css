@@ -12,23 +12,19 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-}
-.bgtext {
-    width: 400px;
-    height: 100px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
 }
 .btn {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    
-}
-.btn-change {
     background-color: Transparent;
     color: rgb(0, 0, 0);
-    border-radius: 25px;
-    width: 130px;
-    height: 70px;
+    border-radius: 10px;
+    width: 90px;
+    height: 50px;
     font-weight: bold;
-    border: 5px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+}
+.btn:active {
+    background-color: black;
+    color: white;
 }
